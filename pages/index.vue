@@ -1,3 +1,8 @@
+<script setup>
+  import Hero from "./_components/hero/hero.vue"
+</script>
 <template>
-    <p class="">This is the main page</p>
+  <main class="container">
+    <Hero />
+  </main>
 </template>

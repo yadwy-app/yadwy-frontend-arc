@@ -10,9 +10,12 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/icon": "^1.4.5",
     "@nuxtjs/i18n": "^8.3.3",
+    "@vueuse/core": "^10.11.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "embla-carousel-vue": "^8.1.8",
     "lucide-vue-next": "^0.424.0",
     "nuxt": "^3.12.4",
     "radix-vue": "^1.9.2",

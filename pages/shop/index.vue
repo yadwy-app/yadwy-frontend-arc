@@ -1,3 +1,4 @@
+
 <template>
-    <p>Shop Page</p>
+    <Hero />
 </template>
