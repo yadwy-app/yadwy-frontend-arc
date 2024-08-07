@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { resolve } from 'path'
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
@@ -10,12 +11,15 @@ export default defineNuxtConfig({
     prefix: '',
     /**
      * Directory that the component lives in.
-     * @default "./components/ui"
+     * @default.vue "./components/ui"
      */
     componentDir: './components/ui'
   },
   i18n: {
     defaultLocale: "ar",
     locales: ["en", "ar"],
+  },
+  alias: {
+    "@": resolve(__dirname, "./components"),
   }
 })
