@@ -10,9 +10,8 @@
       <section class="flex gap-x-2">
         <SearchProduct />
         <ShopWhislist class="border-s-2 border-gray-100" />
-        <LoginOrProfile />
+        <LoginOrProfile class="border-s-2 border-gray-100" />
       </section>
     </nav>
-<!--  </section>-->
   <slot/>
 </template>

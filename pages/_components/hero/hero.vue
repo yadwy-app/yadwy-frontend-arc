@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import { watchOnce } from '@vueuse/core'
 import { Carousel, type CarouselApi, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '~/components/ui/carousel'
-// import { Card, CardContent } from '@/components/ui/card'
+
 
 const emblaMainApi = ref<CarouselApi>()
 const emblaThumbnailApi = ref<CarouselApi>()
@@ -32,30 +32,28 @@ watchOnce(emblaMainApi, (emblaMainApi) => {
 </script>
 
 <template>
-  <div class="w-full sm:w-auto">
+  <div class="group w-full sm:w-auto relative"> <!-- Set relative positioning here -->
     <Carousel
-        class="relative w-full max-w-xs"
+        class="relative w-full"
         @init-api="(val) => emblaMainApi = val"
     >
       <CarouselContent>
         <CarouselItem v-for="(_, index) in 10" :key="index">
           <div class="p-1">
-            card {{index}}
+            <img src="https://i.suar.me/6AyoA/m" alt="card images" class="w-full"/>
           </div>
         </CarouselItem>
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
     </Carousel>
 
     <Carousel
-        class="relative w-full max-w-xs"
+        class="absolute bottom-2 left-1/2 transform -translate-x-1/2 mb-[5px] w-full max-w-md"
         @init-api="(val) => emblaThumbnailApi = val"
     >
-      <CarouselContent class="flex gap-1 ml-0">
-        <CarouselItem v-for="(_, index) in 10" :key="index" class="pl-0 basis-1/4 cursor-pointer" @click="onThumbClick(index)">
-          <div class="p-1" :class="index === selectedIndex ? '' : 'opacity-50'">
-            card
+      <CarouselContent class="flex gap-1 ml-0 justify-center">
+        <CarouselItem v-for="(_, index) in 10" :key="index" class="pl-0 basis-[1/4] cursor-pointer " @click="onThumbClick(index)">
+          <div class="p-1 w-fit" :class="index === selectedIndex ? '' : 'opacity-50'">
+            <p class="rounded-full bg-green-500 " :class="index === selectedIndex ? 'h-4 w-6 ' : 'h-4 w-4'"></p>
           </div>
         </CarouselItem>
       </CarouselContent>
