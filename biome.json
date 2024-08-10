@@ -36,17 +36,8 @@
 					"suspicious": {
 						"noExplicitAny": "off"
 					},
-					"a11y": {
-						"noSvgWithoutTitle": "off"
-					},
 					"style": {
-						"noNonNullAssertion": "off",
-						"useNamingConvention": {
-							"level": "error",
-							"options": {
-								"strictCase": false
-							}
-						}
+						"noNonNullAssertion": "off"
 					}
 				}
 			}

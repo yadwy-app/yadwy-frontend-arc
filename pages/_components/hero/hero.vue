@@ -1,12 +1,15 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { watchOnce } from '@vueuse/core'
-import { Carousel, type CarouselApi, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '~/components/ui/carousel'
-
+import { Carousel, type CarouselApi, CarouselContent, CarouselItem} from '~/components/ui/carousel'
+import {defineProps} from 'vue'
 
 const emblaMainApi = ref<CarouselApi>()
 const emblaThumbnailApi = ref<CarouselApi>()
 const selectedIndex = ref(0)
+defineProps({
+  class: String
+})
 
 function onSelect() {
   if (!emblaMainApi.value || !emblaThumbnailApi.value)
@@ -32,7 +35,7 @@ watchOnce(emblaMainApi, (emblaMainApi) => {
 </script>
 
 <template>
-  <div class="group w-full sm:w-auto relative"> <!-- Set relative positioning here -->
+  <div class="group w-full sm:w-auto relative" :class="class"> <!-- Set relative positioning here -->
     <Carousel
         class="relative w-full"
         @init-api="(val) => emblaMainApi = val"
@@ -40,7 +43,7 @@ watchOnce(emblaMainApi, (emblaMainApi) => {
       <CarouselContent>
         <CarouselItem v-for="(_, index) in 10" :key="index">
           <div class="p-1">
-            <img src="https://i.suar.me/6AyoA/m" alt="card images" class="w-full"/>
+            <NuxtImg src="https://i.suar.me/6AyoA/m" alt="card images" class="w-full"/>
           </div>
         </CarouselItem>
       </CarouselContent>
