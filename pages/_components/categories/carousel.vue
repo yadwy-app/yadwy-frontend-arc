@@ -16,7 +16,7 @@ import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carouse
     <CarouselContent class="-ml-1 w-full">
       <CarouselItem v-for="(_, index) in 5" :key="index" class="pl-1 md:basis-1/2 lg:basis-1/3">
         <div class="p-1">
-          <NuxtImg src="https://i.suar.me/X3zVP/m" alt="image" class="w-full"/>
+          <NuxtImg src="https://i.suar.me/K48O2/m" alt="image" class="w-full"/>
           <p class="text-center w-full">Wood Work</p>
         </div>
       </CarouselItem>

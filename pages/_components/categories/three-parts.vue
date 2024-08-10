@@ -6,7 +6,7 @@
   })
 </script>
 <template >
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-2 text-center" :class="class">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-2 text-center py-10" :class="class">
     <section>
       <ImageContainer >
       <NuxtImg src="/three-parts/one.svg"  alt="three parts image one"/>
