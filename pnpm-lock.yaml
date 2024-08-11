@@ -59,6 +59,9 @@ importers:
       "@nuxtjs/tailwindcss":
         specifier: ^6.12.1
         version: 6.12.1(magicast@0.3.4)(rollup@4.20.0)
+      "@types/tailwindcss":
+        specifier: ^3.1.0
+        version: 3.1.0
       prettier:
         specifier: 3.3.3
         version: 3.3.3
@@ -1887,6 +1890,13 @@ packages:
       {
         integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==,
       }
+
+  "@types/tailwindcss@3.1.0":
+    resolution:
+      {
+        integrity: sha512-JxPzrm609hzvF4nmOI3StLjbBEP3WWQxDDJESqR1nh94h7gyyy3XSl0hn5RBMJ9mPudlLjtaXs5YEBtLw7CnPA==,
+      }
+    deprecated: This is a stub types definition. tailwindcss provides its own type definitions, so you do not need this installed.
 
   "@types/web-bluetooth@0.0.20":
     resolution:
@@ -7977,6 +7987,12 @@ snapshots:
       undici-types: 6.13.0
 
   "@types/resolve@1.20.2": {}
+
+  "@types/tailwindcss@3.1.0":
+    dependencies:
+      tailwindcss: 3.4.7
+    transitivePeerDependencies:
+      - ts-node
 
   "@types/web-bluetooth@0.0.20": {}
 

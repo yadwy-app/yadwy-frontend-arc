@@ -1,6 +1,12 @@
 <script setup>
 import { Button } from '@/components/ui/button'
+import {defineProps} from "vue"
+defineProps({
+  class: String
+})
 </script>
 <template>
-  <Button class="bg-primary/80 hover:bg-primary/90">Login</Button>
+  <div class="p-2" :class="class">
+    <Button class="bg-yadwy-green-500 hover:bg-yadwy-green-600">Login</Button>
+  </div>
 </template>

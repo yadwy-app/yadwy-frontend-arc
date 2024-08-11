@@ -12,15 +12,12 @@
 		"enabled": true,
 		"rules": {
 			"recommended": true,
-			"correctness": {
-				"noUnusedVariables": "error",
-				"noUnusedImports": "error"
-			},
 			"suspicious": {
 				"noConsoleLog": "warn"
 			}
 		}
 	},
+
 	"formatter": {
 		"enabled": true,
 		"lineEnding": "crlf"

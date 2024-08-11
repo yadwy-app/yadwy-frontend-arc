@@ -4,13 +4,12 @@
   import LoginOrProfile from "./login-or-profile.vue"
 </script>
 <template>
-<!--  <section class="bg-gray-200">-->
-    <nav class="container font-bold flex items-center justify-between py-2">
-      <NuxtLink to="/">يَدَوِيٌّ</NuxtLink>
-      <section class="flex gap-x-2">
+    <nav class="container font-bold flex items-center justify-between py-2 ">
+      <NuxtLink to="/" class="text-2xl">يَدَوِيٌّ</NuxtLink>
+      <section class="flex gap-x-2 items-center">
         <SearchProduct />
-        <ShopWhislist class="border-s-2 border-gray-100" />
-        <LoginOrProfile class="border-s-2 border-gray-100" />
+        <ShopWhislist class="border-s-2 border-yadwy-neutral-200" />
+        <LoginOrProfile class="border-s-2 border-yadwy-neutral-200" />
       </section>
     </nav>
   <slot/>
