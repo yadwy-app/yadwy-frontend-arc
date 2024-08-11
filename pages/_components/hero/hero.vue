@@ -55,8 +55,8 @@ watchOnce(emblaMainApi, (emblaMainApi) => {
     >
       <CarouselContent class="flex gap-1 ml-0 justify-center">
         <CarouselItem v-for="(_, index) in 10" :key="index" class="pl-0 basis-[1/4] cursor-pointer " @click="onThumbClick(index)">
-          <div class="p-1 w-fit" :class="index === selectedIndex ? '' : 'opacity-50'">
-            <p class="rounded-full bg-green-500 " :class="index === selectedIndex ? 'h-4 w-6 ' : 'h-4 w-4'"></p>
+          <div class="p-1 w-fit">
+            <p class="rounded-full" :class="index === selectedIndex ? 'h-5 w-8 bg-yadwy-green-900' : 'h-5 w-5 bg-yadwy-green-700'"></p>
           </div>
         </CarouselItem>
       </CarouselContent>

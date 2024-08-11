@@ -5,7 +5,7 @@
 </script>
 <template>
     <nav class="container font-bold flex items-center justify-between py-2 ">
-      <NuxtLink to="/" class="text-2xl">يَدَوِيٌّ</NuxtLink>
+      <NuxtLink to="/" class="text-2xl font-bold">يَدَوِيٌّ</NuxtLink>
       <section class="flex gap-x-2 items-center">
         <SearchProduct />
         <ShopWhislist class="border-s-2 border-yadwy-neutral-200" />
