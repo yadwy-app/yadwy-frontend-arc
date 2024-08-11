@@ -48,6 +48,14 @@
     --yadwy-neutral-50: 180 6.25% 93.73%; /*EEF0F0*/
     --yadwy-neutral-100: 180 6.25% 93.73%; /*EEF0F0*/
     --yadwy-neutral-200: 180 7.04% 86.08%; /*D9DEDE*/
+    --yadwy-neutral-300: 180 5.96% 70.39%; /*#AFB8B8*/
+    --yadwy-neutral-400: 180 5.83% 59.61%; /*#929E9E*/
+    --yadwy-neutral-500: 180 5.26% 48.43%; /*#758282*/
+    --yadwy-neutral-600: 184.62 6.47% 39.41%; /*#5E6A6B*/
+    --yadwy-neutral-700: 186 6.1% 32.16%; /*#4D5657 */
+    --yadwy-neutral-800: 180 5.71% 27.45%; /*#424A4A */
+    --yadwy-neutral-900: 180, 4.92%, 23.92%; /*#3A4040 */
+    --yadwy-neutral-950: 0 0% 14.9%; /*#262626 */
   }
 
   .dark {

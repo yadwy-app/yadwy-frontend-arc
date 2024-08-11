@@ -5,8 +5,10 @@
   import HotWorks from "./_components/hot-artworks/index.vue"
 </script>
 <template>
+  <main class="space-y-10">
     <Hero class="container"/>
     <Category />
-  <ArtWorks />
-  <HotWorks />
+    <ArtWorks />
+    <HotWorks />
+  </main>
 </template>

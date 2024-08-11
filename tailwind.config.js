@@ -25,19 +25,27 @@ module.exports = {
 		extend: {
 			colors: {
 				// Yadwy Colors
-				"yadwy-green-900": "hsl(var(--yadwy-green-900))",
-				"yadwy-green-800": "hsl(var(--yadwy-green-800))",
-				"yadwy-green-700": "hsl(var(--yadwy-green-700))",
-				"yadwy-green-600": "hsl(var(--yadwy-green-600))",
-				"yadwy-green-500": "hsl(var(--yadwy-green-500))",
-				"yadwy-green-400": "hsl(var(--yadwy-green-400))",
-				"yadwy-green-300": "hsl(var(--yadwy-green-300))",
-				"yadwy-green-200": "hsl(var(--yadwy-green-200))",
 				"yadwy-green-100": "hsl(var(--yadwy-green-100))",
+				"yadwy-green-200": "hsl(var(--yadwy-green-200))",
+				"yadwy-green-300": "hsl(var(--yadwy-green-300))",
+				"yadwy-green-400": "hsl(var(--yadwy-green-400))",
+				"yadwy-green-500": "hsl(var(--yadwy-green-500))",
+				"yadwy-green-600": "hsl(var(--yadwy-green-600))",
+				"yadwy-green-700": "hsl(var(--yadwy-green-700))",
+				"yadwy-green-800": "hsl(var(--yadwy-green-800))",
+				"yadwy-green-900": "hsl(var(--yadwy-green-900))",
 
-				"yadwy-neutral-200": "hsl(var(--yadwy-neutral-200))",
-				"yadwy-neutral-100": "hsl(var(--yadwy-neutral-100))",
 				"yadwy-neutral-50": "hsl(var(--yadwy-neutral-50))",
+				"yadwy-neutral-100": "hsl(var(--yadwy-neutral-100))",
+				"yadwy-neutral-200": "hsl(var(--yadwy-neutral-200))",
+				"yadwy-neutral-300": "hsl(var(--yadwy-neutral-300))",
+				"yadwy-neutral-400": "hsl(var(--yadwy-neutral-400))",
+				"yadwy-neutral-500": "hsl(var(--yadwy-neutral-500))",
+				"yadwy-neutral-600": "hsl(var(--yadwy-neutral-600))",
+				"yadwy-neutral-700": "hsl(var(--yadwy-neutral-700))",
+				"yadwy-neutral-800": "hsl(var(--yadwy-neutral-800))",
+				"yadwy-neutral-900": "hsl(var(--yadwy-neutral-900))",
+				"yadwy-neutral-950": "hsl(var(--yadwy-neutral-950))",
 
 				// Tailwind Colors
 				border: "hsl(var(--border))",
