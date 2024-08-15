@@ -1,9 +1,10 @@
 <script setup>
-import { Button } from '@/components/ui/button'
-import {defineProps} from "vue"
+import { Button } from "@/components/ui/button";
+import { defineProps } from "vue";
+
 defineProps({
-  class: String
-})
+  class: String,
+});
 </script>
 <template>
   <div class="p-2" :class="class">

@@ -1,17 +1,18 @@
 <script setup lang="ts">
-import { defineProps } from 'vue';
+import { defineProps } from "vue";
 
 // Correctly define the product prop with type annotations
- defineProps({
+defineProps({
   product: {
     type: Object,
     required: true,
     default: () => ({
-      name: '',
-      price: '',
-      stock: '',
-      averageRating: '',
-      imageUrl: '',
+      id: "",
+      name: "",
+      price: "",
+      stock: "",
+      averageRating: "",
+      imageUrl: "",
       peopleRating: 0,
     }),
   },
@@ -19,17 +20,19 @@ import { defineProps } from 'vue';
 </script>
 <template>
   <section>
-    <NuxtImg :src="product.imageUrl" alt="new artworks" class="w-full"/>
-    <div class="border-2 border-gray-300">
-      <h3>{{product.name }}</h3>
-      <div>
-      <Icon name="tabler:jewish-star" class="w-12 h-12"/>
-        <p>{{ product.averageRating }}</p>
-        <p>({{ product.peopleRating }})</p>
+    <NuxtLink :to="`/product-details/${product.id}`">
+      <NuxtImg :src="product.imageUrl" alt="new artworks" class="w-full" />
+      <div class="border-2 border-gray-300">
+        <h3>{{ product.name }}</h3>
+        <div>
+          <Icon name="tabler:jewish-star" class="h-12 w-12" />
+          <p>{{ product.averageRating }}</p>
+          <p>({{ product.peopleRating }})</p>
+        </div>
+        <p>{{ product.price }}</p>
+        <Icon name="tabler:heart" class="h-12 w-12" />
+        <Button>Add to cart</Button>
       </div>
-      <p>{{ product.price }}</p>
-      <Icon name="tabler:heart" class="w-12 h-12"/>
-      <Button>Add to cart</Button>
-    </div>
+    </NuxtLink>
   </section>
 </template>
