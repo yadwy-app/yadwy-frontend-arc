@@ -28,5 +28,8 @@ export default defineNuxtConfig({
       Lexend: [400, 600, 700],
     },
     display: "swap",
+    prefetch: true, // Prefetch the fonts
+    preconnect: true, // Preconnect to the Google Fonts domain
+    preload: true, // Preload the fonts
   },
 });

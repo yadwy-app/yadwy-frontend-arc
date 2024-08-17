@@ -2,6 +2,8 @@
 import NavBar from "@/pages/_components/nav-bar/index.vue";
 </script>
 <template>
-  <!-- <NavBar /> -->
-  <slot />
+  <div class="font-Lexend">
+    <NavBar />
+    <slot />
+  </div>
 </template>

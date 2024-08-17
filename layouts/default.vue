@@ -2,6 +2,8 @@
 import NavBar from "@/pages/_components/nav-bar/index.vue";
 </script>
 <template>
-  <NavBar />
-  <slot />
+  <div class="font-body">
+    <NavBar />
+    <slot />
+  </div>
 </template>

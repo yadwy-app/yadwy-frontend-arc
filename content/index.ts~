@@ -29,7 +29,7 @@ export const mockProductData = [
   // Add more products as needed
 ];
 
-export const feature = [
+export const features = [
   {
     icon: "tabler:truck-delivery",
     description: "Free 3-5 day shipping",
@@ -41,5 +41,29 @@ export const feature = [
   {
     icon: "iconoir:headset-help",
     description: "24 customer support",
+  },
+];
+
+export const reviewComment = [
+  {
+    userName: "Mohamed Mahmoud",
+    userImage: "https://i.suar.me/K48O2/m",
+    rating:5,
+    reviewText:
+      "Lorem ipsum dolor sit amet consectetur. Dui dictum id morbi augue lorem lobortis. Quam viverra rhoncus pharetra nisl.",
+  },
+  {
+    userName: "yosef mahmoud",
+    userImage: "https://i.suar.me/K48O2/m",
+    rating: 3,
+    reviewText:
+      "Lorem ipsum dolor sit amet consectetur. Dui dictum id morbi augue lorem lobortis. Quam viverra rhoncus pharetra nisl.",
+  },
+  {
+    userName: "I love H",
+    userImage: "https://i.suar.me/K48O2/m",
+    rating: 5,
+    reviewText:
+      "Lorem ipsum dolor sit amet consectetur. Dui dictum id morbi augue lorem lobortis. Quam viverra rhoncus pharetra nisl.",
   },
 ];

@@ -12,9 +12,9 @@ const props = defineProps<{
 
 <template class="flex">
   <div class="flex flex-col gap-4">
-    <div class="flex items-start justify-between md:items-center">
+    <div class="flex justify-between items-start md:items-center">
       <h2 class="text-xl font-bold md:text-3xl">{{ props.title }}</h2>
-      <Icon name="tabler:heart" class="h-8 w-8" />
+      <Icon name="tabler:heart" class="w-8 h-8" />
     </div>
     <div
       class="flex w-fit items-center justify-center gap-2 rounded-lg bg-[#FFFBF1] text-black"
@@ -24,7 +24,7 @@ const props = defineProps<{
       </h3>
       <span class="px-2 font-bold">{{ props.rate }}/5</span>
     </div>
-    <span class="text-2xl">{{ props.price }}</span>
+    <span class="text-2xl font-body">{{ props.price }}</span>
     <p class="text-left text-[#5E6A6B]">
       {{ props.description }}
     </p>
