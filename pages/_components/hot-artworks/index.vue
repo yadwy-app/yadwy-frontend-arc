@@ -28,11 +28,13 @@ const data = [
 ]
 </script>
 <template>
-  <section class="container">
+  <section class="container text-yadwy-neutral-950  space-y-4">
+    <div class="space-y2">
 
-  <h3>Hot Artworks</h3>
-  <p>Lorem ipsum dolor sit amet consectetur. Urna vehicula commodo varius nibh enim id proin.
+  <h3 class="text-3xl font-bold text-center">Hot Artworks</h3>
+  <p class="text-center">Lorem ipsum dolor sit amet consectetur. Urna vehicula commodo varius nibh enim id proin.
     Felis nibh facilisi ac non pharetra proin.</p>
+    </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
       <ProductCard v-for="product in data" :key="product.name" :product="product" />
