@@ -5,7 +5,7 @@
   import HotWorks from "./_components/hot-artworks/index.vue"
 </script>
 <template>
-  <main class="space-y-10">
+  <main class="space-y-12">
     <Hero class="container"/>
     <Category />
     <ArtWorks />

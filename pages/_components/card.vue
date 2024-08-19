@@ -25,7 +25,7 @@ import Rating from "./rating.vue"
       <div class="flex  justify-between">
         <p class="font-bold text-2xl">{{ product.price }}</p>
         <div class="inline-flex gap-2 items-center h-full">
-          <div class="bg-yadwy-neutral-50 flex items-center justify-center  px-2 rounded-sm h-full">
+          <div class="bg-yadwy-neutral-50 flex items-center justify-center p-2 rounded-sm h-full">
               <Icon name="tabler:heart" class="w-6 h-6"/>
           </div>
           <Button >Add to cart</Button>

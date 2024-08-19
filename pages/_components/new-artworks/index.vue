@@ -28,10 +28,12 @@
   ]
 </script>
 <template>
-  <div class="container">
-  <h3 class="font-bold text-center text-2xl">New Artworks</h3>
+  <div class="container  text-yadwy-neutral-950  space-y-4">
+    <div class="space-y-2">
+  <h3 class="font-bold text-center text-3xl">New Artworks</h3>
   <p class="text-center">Lorem ipsum dolor sit amet consectetur. Urna vehicula commodo varius nibh enim id proin.
     Felis nibh facilisi ac non pharetra proin.</p>
+    </div>
 
   <section class="grid grid-cols-1 md:grid-cols-3 gap-2">
     <ProductCard v-for="product in data" :key="product.name" :product="product" />
