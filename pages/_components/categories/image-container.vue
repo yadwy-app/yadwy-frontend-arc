@@ -1,10 +1,6 @@
-<script setup>
-
-
-</script>
+<script setup></script>
 <template>
-    <div class="bg-gray-100 p-5 rounded-full w-fit mx-auto">
-      <slot />
-    </div>
-
+  <div class="mx-auto w-fit rounded-full bg-gray-100 p-5">
+    <slot />
+  </div>
 </template>
