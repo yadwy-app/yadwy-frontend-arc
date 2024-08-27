@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import NavBar from "@/pages/_components/nav-bar/index.vue";
+import Navbar from "@/components/navbar.vue";
 </script>
 <template>
-  <div class="font-body">
-    <NavBar />
+  <div class="flex flex-col gap-4 font-body">
+    <Navbar />
     <slot />
   </div>
 </template>

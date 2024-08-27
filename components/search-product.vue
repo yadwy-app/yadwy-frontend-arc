@@ -17,7 +17,7 @@ const SearchOptions = [
 </script>
 
 <template>
-  <section class="hidden gap-x-2 md:flex">
+  <section class="flex items-center space-x-2">
     <div class="flex">
       <Select>
         <SelectTrigger class="w-[120px] rounded-e-none">
