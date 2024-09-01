@@ -1,9 +1,0 @@
-<script lang="ts" setup>
-import NavBar from "@/pages/_components/nav-bar/index.vue";
-</script>
-<template>
-  <div class="font-Lexend">
-    <NavBar />
-    <slot />
-  </div>
-</template>
