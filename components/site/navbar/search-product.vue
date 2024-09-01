@@ -21,11 +21,11 @@ const SearchOptions = [
 </script>
 
 <template>
-  <section class="flex items-center space-x-2" :class="class">
-    <div class="flex">
+  <section class="flex items-center space-x-2 w-full" :class="class">
+    <div class="flex w-full">
       <Select>
-        <SelectTrigger class="w-[120px] rounded-e-none">
-          <SelectValue placeholder="Search" />
+        <SelectTrigger class="w-24 md:w-28  rounded-e-none">
+          <SelectValue placeholder="Search"/>
         </SelectTrigger>
         <SelectContent>
           <SelectGroup>
@@ -42,7 +42,7 @@ const SearchOptions = [
       <Input
         type="search"
         placeholder="Search for artworks, plants..."
-        class="rounded-s-none border-s-0"
+        class="rounded-s-none border-s-0 md:min-w-64 lg:min-w-80 flex-1"
       />
     </div>
     <Button class="bg-yadwy-green-500 hover:bg-yadwy-green-600"
