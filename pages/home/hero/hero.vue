@@ -54,14 +54,14 @@ watchOnce(emblaMainApi, (emblaMainApi) => {
     </Carousel>
 
     <Carousel
-      class="absolute bottom-2 left-1/2 mb-[5px] w-full max-w-md -translate-x-1/2 transform"
+      class="mt-1.5 sm:mt-0 sm:absolute bottom-2 left-1/2 mb-[5px] w-full max-w-[200px] sm:max-w-[300px] -translate-x-1/2 transform overflow-hidden"
       @init-api="(val) => (emblaThumbnailApi = val)"
     >
       <CarouselContent class="ml-0 flex justify-center gap-1">
         <CarouselItem
           v-for="(_, index) in 10"
           :key="index"
-          class="basis-[1/4] cursor-pointer pl-0"
+          class="basis-1/7 cursor-pointer pl-0"
           @click="onThumbClick(index)"
         >
           <div class="w-fit p-1">
@@ -69,10 +69,10 @@ watchOnce(emblaMainApi, (emblaMainApi) => {
               class="rounded-full"
               :class="
                 index === selectedIndex
-                  ? 'h-5 w-8 bg-yadwy-green-900'
-                  : 'h-5 w-5 bg-yadwy-green-700'
+                  ? 'h-1 w-2 sm:h-3 sm:w-6 bg-yadwy-green-900'
+                  : 'h-1 w-1 sm:h-3 sm:w-3 bg-yadwy-green-700'
               "
-            ></p>
+            />
           </div>
         </CarouselItem>
       </CarouselContent>
