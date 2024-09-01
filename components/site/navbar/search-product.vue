@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Button } from "~/components/ui/button";
+import { Input } from "~/components/ui/input";
 import {
   Select,
   SelectContent,
@@ -8,16 +8,20 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "~/components/ui/select";
 
 const SearchOptions = [
   { label: "One", value: "one" },
   { label: "Two", value: "two" },
 ];
+  defineProps({
+    class: String
+  })
+
 </script>
 
 <template>
-  <section class="flex items-center space-x-2">
+  <section class="flex items-center space-x-2" :class="class">
     <div class="flex">
       <Select>
         <SelectTrigger class="w-[120px] rounded-e-none">

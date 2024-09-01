@@ -1,6 +1,5 @@
 <script lang="ts" setup>
-import Desktop from "@/components/navigation/desktop.vue";
-import Mobile from "@/components/navigation/mobile.vue";
+
 </script>
 
 <template>
@@ -76,7 +75,7 @@ import Mobile from "@/components/navigation/mobile.vue";
 
         </div>
         <div>
-<!--          // download using google play or play store-->
+          <!--          // download using google play or play store-->
           <h3>Download</h3>
           <ul>
             <li>
