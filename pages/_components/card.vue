@@ -24,12 +24,12 @@ defineProps({
       <NuxtImg
         :src="product.imageUrl"
         alt="new artworks"
-        class="w-full rounded-t-md aspect-[10/11]"
+        class="w-full rounded-t-md aspect-[4/3]"
       />
       <div
         class="py-2 px-4 rounded-b-md  "
       >
-        <h3 class="text-lg font-bold">{{ product.name }}</h3>
+        <h3 class="text-lg font-semibold text-ellipsis">{{ product.name }}</h3>
         <Rating
           :product="{
             peopleRating: product.peopleRating,
@@ -37,7 +37,7 @@ defineProps({
           }"
         />
         <div class="flex justify-between">
-          <p class="text-2xl font-bold">{{ product.price }}</p>
+          <p class="text-xl font-semibold">{{ product.price }}</p>
           <div class="inline-flex gap-2 items-center h-full">
             <div
               class="flex justify-center items-center p-2 h-full rounded-sm bg-yadwy-neutral-50"

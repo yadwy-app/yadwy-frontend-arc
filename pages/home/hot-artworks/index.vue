@@ -29,6 +29,15 @@ const data = [
     imageUrl: "https://media.istockphoto.com/id/1372896722/photo/potted-banana-plant-isolated-on-white-background.jpg?s=2048x2048&w=is&k=20&c=jYsZ-tsu_UoPs-Ba1AFXsZySir58nPPfVUiftHgxq24%3D",
     peopleRating: 10,
   },
+  {
+    id: "3",
+    name: "New Artworks",
+    price: "$ 10.00",
+    stock: "In Stock",
+    averageRating: "4.5",
+    imageUrl: "https://media.istockphoto.com/id/1372896722/photo/potted-banana-plant-isolated-on-white-background.jpg?s=2048x2048&w=is&k=20&c=jYsZ-tsu_UoPs-Ba1AFXsZySir58nPPfVUiftHgxq24%3D",
+    peopleRating: 10,
+  },
 ];
 </script>
 <template>
@@ -41,7 +50,7 @@ const data = [
       </p>
     </div>
 
-    <div class="grid gap-2 md:grid-cols-2 lg:grid-cols-3">
+    <div class="grid gap-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       <ProductCard
         v-for="product in data"
         :key="product.name"

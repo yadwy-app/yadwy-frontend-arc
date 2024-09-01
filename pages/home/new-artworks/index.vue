@@ -46,7 +46,7 @@ const data = [
       </p>
     </div>
 
-    <section class="grid gap-2 md:grid-cols-2 lg:grid-cols-3">
+    <section class="grid gap-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       <ProductCard
         v-for="product in data"
         :key="product.name"
