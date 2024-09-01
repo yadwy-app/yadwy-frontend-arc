@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ProductCard from "../../_components/card.vue";
+import ProductCard from "../../_components/card/card.vue";
 
 const data = [
   {

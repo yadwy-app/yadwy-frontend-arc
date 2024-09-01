@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { defineProps } from "vue";
+import Rating from "./rating.vue";
 
 // Correctly define the product prop with type annotations
 defineProps({
@@ -20,14 +21,15 @@ defineProps({
 </script>
 <template>
   <section class="bg-white shadow-lg shadow-yadwy-neutral-200 text-yadwy-neutral-900 rounded-md">
-    <NuxtLink :to="`/product-details/${product.id}`">
-      <NuxtImg
-        :src="product.imageUrl"
-        alt="new artworks"
-        class="w-full rounded-t-md aspect-[4/3]"
-      />
+    <NuxtLink :to="`/product-details/${product.id}`" >
+        <NuxtImg
+          :src="product.imageUrl"
+          alt="new artworks"
+          class="w-full rounded-t-md aspect-[4/3]"
+        />
+    </NuxtLink>
       <div
-        class="py-2 px-4 rounded-b-md  "
+        class="py-3 px-4 rounded-b-md space-y-2 "
       >
         <h3 class="text-lg font-semibold text-ellipsis">{{ product.name }}</h3>
         <Rating
@@ -48,6 +50,5 @@ defineProps({
           </div>
         </div>
       </div>
-    </NuxtLink>
   </section>
 </template>
