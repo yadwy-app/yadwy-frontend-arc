@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ProductCard from "../card.vue";
+import ProductCard from "../../_components/card.vue";
 
 const data = [
   {
@@ -46,7 +46,7 @@ const data = [
       </p>
     </div>
 
-    <section class="grid grid-cols-1 gap-2 md:grid-cols-3">
+    <section class="grid gap-2 md:grid-cols-2 lg:grid-cols-3">
       <ProductCard
         v-for="product in data"
         :key="product.name"

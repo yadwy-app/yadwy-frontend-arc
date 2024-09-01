@@ -19,15 +19,15 @@ defineProps({
 });
 </script>
 <template>
-  <section class="bg-white shadow-md text-yadwy-neutral-900">
+  <section class="bg-white shadow-lg shadow-yadwy-neutral-200 text-yadwy-neutral-900 rounded-md">
     <NuxtLink :to="`/product-details/${product.id}`">
       <NuxtImg
         :src="product.imageUrl"
         alt="new artworks"
-        class="w-full rounded-t-md"
+        class="w-full rounded-t-md aspect-[10/11]"
       />
       <div
-        class="py-2 px-4 rounded-b-md border-2 border-t-0 border-yadwy-neutral-200"
+        class="py-2 px-4 rounded-b-md  "
       >
         <h3 class="text-lg font-bold">{{ product.name }}</h3>
         <Rating

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ProductCard from "../card.vue";
+import ProductCard from "../../_components/card.vue";
 
 const data = [
   {
@@ -8,7 +8,7 @@ const data = [
     price: "$ 10.00",
     stock: "In Stock",
     averageRating: "4.5",
-    imageUrl: "https://i.suar.me/K48O2/m",
+    imageUrl: "https://i.suar.me/QqzyJ/l",
     peopleRating: 10,
   },
   {
@@ -17,7 +17,7 @@ const data = [
     price: "$ 10.00",
     stock: "In Stock",
     averageRating: "4.5",
-    imageUrl: "https://i.suar.me/K48O2/m",
+    imageUrl: "https://i.pinimg.com/564x/3d/21/ce/3d21cec1e996fe9a3e15f3d81d39134e.jpg",
     peopleRating: 10,
   },
   {
@@ -26,7 +26,7 @@ const data = [
     price: "$ 10.00",
     stock: "In Stock",
     averageRating: "4.5",
-    imageUrl: "https://i.suar.me/K48O2/m",
+    imageUrl: "https://media.istockphoto.com/id/1372896722/photo/potted-banana-plant-isolated-on-white-background.jpg?s=2048x2048&w=is&k=20&c=jYsZ-tsu_UoPs-Ba1AFXsZySir58nPPfVUiftHgxq24%3D",
     peopleRating: 10,
   },
 ];
@@ -41,7 +41,7 @@ const data = [
       </p>
     </div>
 
-    <div class="grid grid-cols-1 gap-2 md:grid-cols-3">
+    <div class="grid gap-2 md:grid-cols-2 lg:grid-cols-3">
       <ProductCard
         v-for="product in data"
         :key="product.name"
