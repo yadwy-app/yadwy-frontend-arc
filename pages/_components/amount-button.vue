@@ -9,7 +9,7 @@ import {
 </script>
 
 <template>
-  <NumberField class="w-full md:w-4/5" id="age" :default-value="1" :min="0">
+  <NumberField class="w-full md:w-4/5" id="amount" :default-value="1" :min="0">
     <NumberFieldContent>
       <NumberFieldDecrement />
       <NumberFieldInput />

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import AmountButton from "./amount-button.vue";
+import AmountButton from "../../_components/amount-button.vue";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 

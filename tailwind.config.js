@@ -42,6 +42,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        "primary":"#8FB6B6",
         // Yadwy Colors
         "yadwy-green-100": "hsl(var(--yadwy-green-100))",
         "yadwy-green-200": "hsl(var(--yadwy-green-200))",
