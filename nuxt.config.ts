@@ -32,4 +32,10 @@ export default defineNuxtConfig({
     preconnect: true, // Preconnect to the Google Fonts domain
     preload: true, // Preload the fonts
   },
+  runtimeConfig: {
+    public: {
+      WHATSAPP_NUMBER: process.env.WHATSAPP_NUMBER,
+      WHATSAPP_LINK: process.env.WHATSAPP_LINK,
+    }
+  }
 });
