@@ -25,7 +25,9 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     families: {
-      Lexend: [400, 600, 700],
+
+      Lexend: [400, 600, 700], // in En
+      Lalezar: [400, 500, 700],// in Ar
     },
     display: "swap",
     prefetch: true, // Prefetch the fonts

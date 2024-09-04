@@ -20,12 +20,12 @@ defineProps({
 });
 </script>
 <template>
-  <section class="bg-white shadow-lg shadow-yadwy-neutral-200 text-yadwy-neutral-900 rounded-md">
+  <section class="bg-white shadow-lg shadow-yadwy-neutral-200 text-yadwy-neutral-900 rounded-md ">
     <NuxtLink :to="`/product-details/${product.id}`" >
         <NuxtImg
           :src="product.imageUrl"
           alt="new artworks"
-          class="w-full rounded-t-md aspect-[4/3]"
+          class="w-full rounded-t-md  aspect-"
         />
     </NuxtLink>
       <div

@@ -6,7 +6,7 @@ import { Separator } from "~/components/ui/separator";
 </script>
 <template>
   <nav class="container">
-  <section class=" justify-between items-center py-2 font-bold flex">
+  <section class="justify-between items-center py-2 font-bold flex">
     <NuxtLink to="/" class="text-2xl font-bold">يَدَوِيٌّ</NuxtLink>
     <section class="flex gap-2 items-center">
       <SearchProduct class="hidden md:flex"/>
